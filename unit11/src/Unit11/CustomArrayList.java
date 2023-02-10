@@ -4,9 +4,8 @@ public class CustomArrayList<T> implements CustomList<T> {
     Object[] items = new Object[10];
    int size = 0;
     @Override
-    public boolean add(T item) {
+    public void add(T item) {
         items[size++] = item;
-        return false;
     }
 
     @Override
